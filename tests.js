@@ -27,8 +27,19 @@ describe('sayHello', function () {
     it('should return "Hello Alex!" when input "Alex"', function () {
       expect(sayHello("Alex")).toBe("Hello Alex!");
     });
-    it('should return "Hello Pat!" when in put "Pat" ', function () {
-      expect(sayHello("Pat")).toBe("Hello Pat!") ;
+    it('should return "Hello Pat!" when input "Pat" ', function () {
+      expect(sayHello("Pat")).toBe("Hello Pat!");
+    });
+    it('should return "Hello World!" ', function () {
+        expect(sayHello()).toBe("Hello World!");
+    });
+    it('should return "Hello World", when input "true"', function () {
+        expect(sayHello(true)).toBe("Hello World!");
+    });
+    it('should return "Hello World", when input "false"', function() {
+        expect(sayHello(false)).toBe("Hello World!");
     });
 });
+
+
 
